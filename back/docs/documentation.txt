@@ -1,0 +1,64 @@
+DOCUMENTATION
+
+view materialized :
+https://aws.amazon.com/fr/what-is/materialized-view/
+https://medium.com/design-microservices-architecture-with-patterns/materialized-view-pattern-f29ea249f8f8
+
+json API :
+https://jsonapi.org/
+
+the 7 restfull :
+https://hackernoon.com/crud-and-the-7-restful-actions-uc4m3yoe
+
+SQL CTE :
+https://sgbd.developpez.com/actu/101633/Apprendre-a-utiliser-manipuler-les-CTE-Common-Table-Expression-un-tutoriel-de-Lyche/
+
+
+ARCHI
+services/infrastructure : ex: messaging (RabbitMQ - Kafka)
+
+TESTS
+every code status generate by the code should be test
+every data object has to be test
+every action should be compare with the database logic
+
+ENDPOINT
+SWAGGER
+create / POST
+---> 400 (client error - validator)
+---> 401 (invalid or missing token)
+---> 403 (invalid right)
+---> 500 (server error)
+---> 201 (success)
+
+index / GET
+---> 400 (client error - validator)
+---> 401 (invalid or missing token)
+---> 403 (invalid right)
+---> 500 (server error)
+---> 200 (success)
+
+show / GET
+---> 400 (client error - validator)
+---> 401 (invalid or missing token)
+---> 403 (invalid right)
+---> 404 (invalid id)
+---> 500 (server error)
+---> 200 (success)
+
+delete / DELETE
+---> 400 (client error - validator)
+---> 401 (invalid or missing token)
+---> 403 (invalid right)
+---> 404 (invalid id)
+---> 500 (server error)
+---> 200 (success)
+
+update / UPDATE
+---> 400 (client error - validator)
+---> 401 (invalid or missing token)
+---> 403 (invalid right)
+---> 404 (invalid id)
+---> 500 (server error)
+---> 200 (success)
+
