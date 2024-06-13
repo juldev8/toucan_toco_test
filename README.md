@@ -1,4 +1,7 @@
 
+# prerequisites
+install postgres
+
 # installation
 git clone https://github.com/juldev8/toucan_toco_test.git
 cd back

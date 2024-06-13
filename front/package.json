@@ -1,0 +1,44 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "main": "main.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --port 4200",
+    "dev": "webpack --mode development",
+    "lint": "npx eslint 'src/**'",
+    "lint:fix": "npx eslint 'src/**' --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "dotenv": "^16.4.5",
+    "jsonapi-serializer": "^3.6.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.51.5",
+    "react-router-dom": "^6.23.1",
+    "swc-loader": "^0.2.6",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@types/jsonapi-serializer": "^3.6.8",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-testcafe": "^0.2.1",
+    "globals": "^15.4.0",
+    "html-webpack-plugin": "^5.6.0",
+    "typescript-eslint": "^7.13.0",
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
